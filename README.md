@@ -1,20 +1,10 @@
-# Compilation_flex_bison_recursive.Descent.Parser
-> The project was built in C and Flex
+# Compilation_flex_bison_recursiveDescentParser
+> The project was built in C , Flex & Bison
 
 ### `Description `
 ---
-
-### BottomUp Version
-
-### TopDown Version
-
-
-> The project was built in C and Flex
-
-### `Description `
----
-The program writes to the output a description of the tokens it recognizes in its input.
- It will use a lexical analyzer - the function (yylex) - written by flex. The yylex interface will return a number indicating the type of token it found. In case the token has a semantic value, it will write it to the global variable yylval which will be defined as union.
+The program reads input information about departing flights.
+And prints a message comparing the number of flights departing "before noon" to the number of flights departing "after noon". Cargo flights are not taken into account.
 
 ##### `input` 
 ---
@@ -50,7 +40,18 @@ AA17 11:00a.m. "LAX"
 
 ##### `Output` 
 --- 
-<img width="1123" alt="Screenshot 2023-02-08 at 0 58 07" src="https://user-images.githubusercontent.com/72464761/217385978-07a93225-3e8d-46c4-9cc5-dd15d4624bd4.png">
+### BottomUp Version
+<img width="570" alt="Screenshot 2023-02-08 at 19 55 06" src="https://user-images.githubusercontent.com/72464761/217612654-20615ede-b6a9-4f44-9c84-914552168c2a.png">
+
+
+
+### TopDown Version
+<img width="570" alt="Screenshot 2023-02-08 at 19 53 00" src="https://user-images.githubusercontent.com/72464761/217612066-71fafa2c-f291-4eff-82c4-5aa93737577d.png">
+
+
+
+
+
 
 
 ##### `Steps for running the program` 
