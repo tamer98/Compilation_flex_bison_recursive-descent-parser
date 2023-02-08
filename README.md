@@ -8,7 +8,7 @@ And prints a message comparing the number of flights departing "before noon" to 
 
 ##### `input` 
 ---
-> test_airport.txt file
+> flights_input.txt file
 
 The input includes information about outgoing flights.
 
@@ -39,7 +39,7 @@ AA17 11:00a.m. "LAX"
 
 
 ##### `Output` 
---- 
+---
 ### BottomUp Version
 <img width="570" alt="Screenshot 2023-02-08 at 19 55 06" src="https://user-images.githubusercontent.com/72464761/217612654-20615ede-b6a9-4f44-9c84-914552168c2a.png">
 
@@ -51,13 +51,11 @@ AA17 11:00a.m. "LAX"
 
 
 
-
-
-
 ##### `Steps for running the program` 
 ---
  ```
-1. flex airport.lex 
-2. gcc -o airport lex.yy.c 
-3. ./airport test_airport.txt 
+1. flex flights.lex 
+A lex.yy.c file will be created
+2. bison -d flights.y
+A flights.tab.h and flights.tab.c files will be created
  ```
