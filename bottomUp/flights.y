@@ -44,7 +44,6 @@ struct max_count
 
 
 
-
 %define parse.error verbose
 
 /* %error-verbose */
@@ -66,17 +65,15 @@ input: DEPARTURES list_of_flights
 
 list_of_flights: list_of_flights flight
 {
-	//if($2 != NULL)
-	// { 
-		if($2 == AM) 
-		 {
-	      	 	$$.countAm =$$.countAm + 1;
-		 }
-		else if($2 == PM) 
-		 {
-	       		$$.countPm = $$.countPm + 1;	  
-		 }
-	//}
+	
+	if($2 == AM) 
+	{
+	    $$.countAm =$$.countAm + 1;
+	}
+	else if($2 == PM) 
+	{
+	    $$.countPm = $$.countPm + 1;	  
+	}
 };
 
 
@@ -91,7 +88,6 @@ flight: FLIGHTNUMBER TIME AIRPORT cargo_spec
 	$$ = $2;
 	} 
 };
-
 
 
 cargo_spec: 
