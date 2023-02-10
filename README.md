@@ -5,11 +5,13 @@
 ---
 The program reads input information about departing flights.
 And prints a message comparing the number of flights departing "before noon" to the number of flights departing "after noon". Cargo flights are not taken into account.
-> Both versions using flex to produce the lexer.
 
 > ### There are two versions
 
 > #### There is a make file
+
+> Both versions using flex to produce the lexer.
+
 
 
 ### `input` 
